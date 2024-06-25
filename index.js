@@ -6,9 +6,11 @@ function isValidVoter(birthYear) {
   const age = 2024 - birthYear;
   console.log(age > 21 ? "Eligible to vote" : "Not eligible to vote");
 }
-function isLeapYear(year) {
-  console.log(year % 4 === '0' ? "Leap Year" : "Not a leap year");
+function canDrink(birthYear){
+    const age = 2024 - birthYear;
+    console.log(age > 25 ? "Eligible to drink" : "Not eligible to drink");
 }
 getAge(2002);
 isValidVoter(2000);
-isLeapYear(2001);
+canDrink(2001);
+
